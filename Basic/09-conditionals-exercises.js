@@ -63,12 +63,91 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=8652
 
 // 6. Muestra en que estación del año nos encontramos dependiendo del valor de una variable "mes"
 
+    let mes = 2
+
+    if (mes === 3 || mes === 4 || mes === 5){
+        console.log("esta es la estación de Primavera")
+    }
+    else if(mes === 6 || mes === 7 || mes === 8){
+        console.log("esta es la estación de Verano")
+    }
+    else if(mes === 9 || mes === 10 || mes === 11){
+        console.log("esta es la estación de Otoño")
+    }
+    else{
+        console.log("esta es la estación de Invierno")
+    }
+
 // 7. Muestra el número de días que tiene un mes dependiendo de la variable del ejercicio anterior
+
+    
+    if (mes === 1 || mes === 3 || mes === 5 || mes === 7 || mes === 8 || mes === 10 || mes === 12){
+        console.log("la cantidad de días que tiene es de 31")
+    }
+    else if(mes === 4 || mes === 6 || mes === 9 || mes === 11){
+        console.log("la cantidad de días que tiene es de 30")
+    }
+    else{
+        console.log("la cantidad de días que tiene es de 28")
+        
+    }
 
 // switch
 
 // 8. Usa un switch para imprimir un mensaje de saludo diferente dependiendo del idioma
 
+    let idioma = "portugues"
+    switch(idioma){
+        case "español":
+            console.log("Hola")
+            break
+        case "ingles":
+            console.log("Hello / Hi")
+            break
+        case "portugues":
+            console.log("Olá")
+            break
+        default:
+            console.log("Bonjour")
+    }
+
 // 9. Usa un switch para hacer de nuevo el ejercicio 6
 
+  switch (mes){
+    case 3:
+    case 4:
+    case 5:
+        console.log("esta es la estación de Primavera");
+        break;
+
+    case 6:
+    case 7:
+    case 8:
+        console.log("esta es la estación de Verano");
+        break;
+
+    case 9:
+    case 10:
+    case 11:
+        console.log("esta es la estación de Otoño");
+        break;
+
+    default:
+        console.log("esta es la estación de Invierno");
+}
+
 // 10. Usa un switch para hacer de nuevo el ejercicio 7
+
+    switch (mes){
+        case 2:
+        console.log("la cantidad de días que tiene es de 28")
+            break
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+        console.log("la cantidad de días que tiene es de 30")
+            break
+        default:
+            console.log("la cantidad de días que tiene es de 31")
+    }
